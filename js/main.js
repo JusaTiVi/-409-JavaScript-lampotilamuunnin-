@@ -1,0 +1,1 @@
+var valinta = document.getElementById("asetus");
