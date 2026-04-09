@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lämpötilamuunnin</title>
+</head>
+<body>
+    <h1>Lämpötilamuunnin</h1>
+
+    <label for="asetus">valitse asetus</label>
+    <select name="asetus" id="asetus">
+        <option value="celcius">Celcius -> Fahrenheit</option>
+        <option value="fahrenheit">Fahrenheit -> Celcius</option>
+    </select>
+
+    <p>Syötä lämpötila:</p>
+    <input type="text" id="luku">
+    <button onclick="muunna()">Muunna</button><br>
+    <input type="radio" id="yksi" name="desimaali" value="yksi">
+    <label for="yksi">1 desimaali</label><br>
+    <input type="radio" id="kaksi" name="desimaali">
+    <label for="kaksi" value="kaksi">2 desimaali</label><br>
+    <input type="radio" id="kolme" name="desimaali">
+    <label for="kolme" value="kolme">3 desimaali</label><br>
+
+    <p id="result"></p>
+    <script src="js/main.js">
+    </script>
+    
+</body>
+</html>
