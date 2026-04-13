@@ -10,21 +10,26 @@
 
     <label for="asetus">valitse asetus</label>
     <select name="asetus" id="asetus">
-        <option value="celcius">Celcius -> Fahrenheit</option>
-        <option value="fahrenheit">Fahrenheit -> Celcius</option>
+        <option value="celsius">Celsius -> Fahrenheit</option>
+        <option value="fahrenheit">Fahrenheit -> Celsius</option>
     </select>
 
     <p>Syötä lämpötila:</p>
     <input type="text" id="luku">
+
     <button onclick="muunna()">Muunna</button><br>
-    <input type="radio" id="yksi" name="desimaali" value="yksi">
+
+    <input type="radio" id="yksi" name="desimaali" value="1" checked>
     <label for="yksi">1 desimaali</label><br>
-    <input type="radio" id="kaksi" name="desimaali">
-    <label for="kaksi" value="kaksi">2 desimaali</label><br>
-    <input type="radio" id="kolme" name="desimaali">
-    <label for="kolme" value="kolme">3 desimaali</label><br>
+
+    <input type="radio" id="kaksi" name="desimaali" value="2">
+    <label for="kaksi">2 desimaali</label><br>
+
+    <input type="radio" id="kolme" name="desimaali" value="3">
+    <label for="kolme">3 desimaali</label><br>
 
     <p id="result"></p>
+
     <script src="js/main.js">
     </script>
     
