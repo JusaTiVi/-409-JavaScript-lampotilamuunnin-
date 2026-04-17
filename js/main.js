@@ -1,6 +1,7 @@
 
 function muunna() {
-    let luku = parseFloat(document.getElementById("luku").value);
+    let luku = document.getElementById("luku").value;
+
 
     if (isNaN(luku)) {
         document.getElementById("result").textContent =
@@ -9,6 +10,7 @@ function muunna() {
     }
 
     let asetus = document.getElementById("asetus").value;
+
 
     let desimaali = parseInt(document.querySelector('input[name="desimaali"]:checked').value);
 
