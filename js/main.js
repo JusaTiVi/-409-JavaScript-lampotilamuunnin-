@@ -9,6 +9,12 @@ function muunna() {
         return;
     }
 
+    if (luku === "") {
+        document.getElementById("result").textContent =
+        "virhe, unohdit syöttää luvun!";
+        return;
+    }
+
     let asetus = document.getElementById("asetus").value;
 
 
